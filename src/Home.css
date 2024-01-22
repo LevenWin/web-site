@@ -1,0 +1,138 @@
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-height: 1200px) { 
+  html {
+    font-size: 16px;
+  }
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (max-height: 1200px) { 
+  html {
+    font-size: 15px;
+  }
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (max-height: 1000px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (max-height: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (max-height: 750px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* 小屏幕（平板，大于等于 500px） */
+@media (max-height: 500px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+/* 小屏幕（平板，大于等于 500px） */
+@media (max-height: 550px) {
+  html {
+    font-size: 6px;
+  }
+  .small-item {
+    width: 30vw;
+  }
+  .small-hide {
+    display: none;
+  }
+}
+
+body {
+  /* background-color: #e4ecfe; */
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  
+}
+.bg-image {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: -1;
+}
+.contact {
+  
+}
+.app {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  margin-top: 10vh;
+
+
+}
+.app > img {
+  width: 20vw;
+  object-fit: fill;
+  align-items: center;
+}
+.app > img:nth-child(2) {
+  margin-left: 15vw;
+}
+.small-app {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+  align-items: center;
+  margin-top: 60px;
+
+}
+
+.small-app > img {
+  width: 30vw;
+  object-fit: fill;
+}
+.small-app > img:nth-child(2) {
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 10vw;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15vh;
+}
+
